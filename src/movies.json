@@ -1,0 +1,146 @@
+[
+    {
+        "id": "1",
+        "name": "Amaran",
+        "thumbnail_url": "https://github.com/Sivatech24/ImageHost/blob/a2c6febd1bf7e9d12be4e0f59754adfcac29da59/ImagesForMovies/amaran.jpg",
+        "rating": 8.0,
+        "user_rating": 9.0,
+        "video_url": "https://youtu.be/H7FT-d4YA74?si=-cQvgJsVIWs0PzX0"
+    },
+    {
+        "id": "2",
+        "name": "Dune",
+        "thumbnail_url": "https://github.com/Sivatech24/ImageHost/blob/a2c6febd1bf7e9d12be4e0f59754adfcac29da59/ImagesForMovies/dune.jpg",
+        "rating": 8.0,
+        "user_rating": 8.0,
+        "video_url": "https://youtu.be/n9xhJrPXop4?si=b3MPwLVdEAX_zXl8"
+    },
+    {
+        "id": "3",
+        "name": "Gladiator",
+        "thumbnail_url": "https://github.com/Sivatech24/ImageHost/blob/a2c6febd1bf7e9d12be4e0f59754adfcac29da59/ImagesForMovies/gladiator.jpg",
+        "rating": 7.0,
+        "user_rating": 8.0,
+        "video_url": "https://youtu.be/P5ieIbInFpg?si=6FWQ1UMXZ3KY2w-F"
+    },
+    {
+        "id": "4",
+        "name": "Lucky-baskhar",
+        "thumbnail_url": "https://github.com/Sivatech24/ImageHost/blob/a2c6febd1bf7e9d12be4e0f59754adfcac29da59/ImagesForMovies/lucky-baskhar.jpg",
+        "rating": 9.0,
+        "user_rating": 8.0,
+        "video_url": "https://youtu.be/vs6JMdKjoVI?si=O-PXbTixoFaE6IEm"
+    },
+    {
+        "id": "5",
+        "name": "Moana2",
+        "thumbnail_url": "https://github.com/Sivatech24/ImageHost/blob/a2c6febd1bf7e9d12be4e0f59754adfcac29da59/ImagesForMovies/moana2.jpg",
+        "rating": 9.0,
+        "user_rating": 8.0,
+        "video_url": "https://youtu.be/hDZ7y8RP5HE?si=3KnTqm2fr6pAoSOA"
+    },
+    {
+        "id": "6",
+        "name": "Wicked",
+        "thumbnail_url": "https://github.com/Sivatech24/ImageHost/blob/a2c6febd1bf7e9d12be4e0f59754adfcac29da59/ImagesForMovies/wicked.jpg",
+        "rating": 7.0,
+        "user_rating": 7.0,
+        "video_url": "https://youtu.be/6COmYeLsz4c?si=cTtORdS5znxpl7Js"
+    },
+    {
+        "id": "7",
+        "name": "IronMan",
+        "thumbnail_url": "https://github.com/Sivatech24/ImageHost/blob/a2c6febd1bf7e9d12be4e0f59754adfcac29da59/ImagesForMovies/IronMan.jpg",
+        "rating": 9.0,
+        "user_rating": 9.0,
+        "video_url": "https://youtu.be/8ugaeA-nMTc?si=DPvhsG80sUApxSK0"
+    },
+    {
+        "id": "8",
+        "name": "Our Little Secret",
+        "thumbnail_url": "https://github.com/Sivatech24/ImageHost/blob/a2c6febd1bf7e9d12be4e0f59754adfcac29da59/ImagesForMovies/Our%20Little%20Secret.jpg",
+        "rating": 7.0,
+        "user_rating": 7.0,
+        "video_url": "https://youtu.be/fcc9G9PXTEE?si=xBboOT8Cx4jtLW1s"
+    },
+    {
+        "id": "9",
+        "name": "Pushpa",
+        "thumbnail_url": "https://github.com/Sivatech24/ImageHost/blob/a2c6febd1bf7e9d12be4e0f59754adfcac29da59/ImagesForMovies/Pushpa.jpg",
+        "rating": 8.0,
+        "user_rating": 7.0,
+        "video_url": "https://youtu.be/1kVK0MZlbI4?si=d_wGNd8Ni7YxUhCy"
+    },
+    {
+        "id": "10",
+        "name": "Gladiator1",
+        "thumbnail_url": "https://github.com/Sivatech24/ImageHost/blob/a2c6febd1bf7e9d12be4e0f59754adfcac29da59/ImagesForMovies/Gladiator1.jpg",
+        "rating": 8.0,
+        "user_rating": 9.0,
+        "video_url": "https://youtu.be/P5ieIbInFpg?si=ixoc7ArybaeLeVjk"
+    },
+    {
+        "id": "11",
+        "name": "Conclave",
+        "thumbnail_url": "https://github.com/Sivatech24/ImageHost/blob/a2c6febd1bf7e9d12be4e0f59754adfcac29da59/ImagesForMovies/Conclave.jpg",
+        "rating": 8.0,
+        "user_rating": 7.0,
+        "video_url": "https://youtu.be/JX9jasdi3ic?si=YX33l-WW1Xu4XWjh"
+    },
+    {
+        "id": "12",
+        "name": "Snow White",
+        "thumbnail_url": "https://github.com/Sivatech24/ImageHost/blob/a2c6febd1bf7e9d12be4e0f59754adfcac29da59/ImagesForMovies/Snow%20White.jpg",
+        "rating": 8.0,
+        "user_rating": 8.0,
+        "video_url": "https://youtu.be/iV46TJKL8cU?si=xuuuTP1w2vfsJ5th"
+    },
+    {
+        "id": "13",
+        "name": "Deadpool & Wolverine",
+        "thumbnail_url": "https://github.com/Sivatech24/ImageHost/blob/a2c6febd1bf7e9d12be4e0f59754adfcac29da59/ImagesForMovies/Deadpool%20%26%20Wolverine.jpg",
+        "rating": 8.0,
+        "user_rating": 8.0,
+        "video_url": "https://youtu.be/73_1biulkYk?si=M9cy4UxhFkhkRt3y"
+    },
+    {
+        "id": "14",
+        "name": "Smile 2",
+        "thumbnail_url": "https://github.com/Sivatech24/ImageHost/blob/a2c6febd1bf7e9d12be4e0f59754adfcac29da59/ImagesForMovies/Smile%202.jpg",
+        "rating": 8.0,
+        "user_rating": 6.0,
+        "video_url": "https://youtu.be/0HY6QFlBzUY?si=gmWa7oLvgK9yeXcm"
+    },
+    {
+        "id": "15",
+        "name": "The Merry Gentlemen",
+        "thumbnail_url": "https://github.com/Sivatech24/ImageHost/blob/a2c6febd1bf7e9d12be4e0f59754adfcac29da59/ImagesForMovies/The%20Merry%20Gentlemen.jpg",
+        "rating": 7.0,
+        "user_rating": 7.0,
+        "video_url": "https://youtu.be/G80Q8-MJM1A?si=hftkwDmkyOohNdZQ"
+    },
+    {
+        "id": "16",
+        "name": "Thor",
+        "thumbnail_url": "https://github.com/Sivatech24/ImageHost/blob/a2c6febd1bf7e9d12be4e0f59754adfcac29da59/ImagesForMovies/Thor.jpg",
+        "rating": 8.0,
+        "user_rating": 8.0,
+        "video_url": "https://youtu.be/JOddp-nlNvQ?si=C4WXIv72L8IUHRdW"
+    },
+    {
+        "id": "17",
+        "name": "Avengers Endgame",
+        "thumbnail_url": "https://github.com/Sivatech24/ImageHost/blob/a2c6febd1bf7e9d12be4e0f59754adfcac29da59/ImagesForMovies/Avengers%20Endgame.jpg",
+        "rating": 8.0,
+        "user_rating": 8.0,
+        "video_url": "https://youtu.be/TcMBFSGVi1c?si=AF4yfc3DsOsieve7"
+    },
+    {
+        "id": "18",
+        "name": "Squid Game",
+        "thumbnail_url": "https://github.com/Sivatech24/ImageHost/blob/a2c6febd1bf7e9d12be4e0f59754adfcac29da59/ImagesForMovies/Squid%20Game.jpg",
+        "rating": 8.0,
+        "user_rating": 9.0,
+        "video_url": "https://youtu.be/oqxAJKy0ii4?si=S8Nx9WoL-ngfBwHN"
+    }
+]
