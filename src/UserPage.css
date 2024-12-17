@@ -1,0 +1,337 @@
+/* UserPage.css */
+
+/* General Page Styles */
+.user-page {
+  font-family: 'Arial', sans-serif;
+  color: #333;
+  background-color: #111;
+  background-size: cover; /* Ensures image covers the whole screen */
+  margin: 20px;
+  padding: 20px;
+}
+
+.user-header {
+  font-size: 2.5em;
+  font-weight: bold;
+  color: #d3d3d3;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+/* Container for the statistics */
+.stats-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+/* Style for each statistics card */
+.stat-card {
+  background-color: #fff;
+  border: 1px solid #e1e1e1;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 90%;
+  max-width: 600px;
+}
+
+.stat-card h2 {
+  font-size: 1.8em;
+  color: #444;
+  margin-bottom: 15px;
+}
+
+.user-count {
+  font-size: 2em;
+  color: #ffcc00;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.movie-list {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.movie-item {
+  background-color: #f9f9f9;
+  padding: 15px;
+  border-bottom: 1px solid #f1f1f1;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+}
+
+.movie-poster {
+  width: 100px;
+  height: 150px;
+  object-fit: cover;
+  margin-right: 20px;
+  border-radius: 5px;
+}
+
+.movie-info {
+  flex-grow: 1;
+}
+
+.movie-title {
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #444;
+}
+
+.movie-stat {
+  font-size: 1em;
+  color: #666;
+}
+.nav-container button:nth-child(1) {
+  background-color: #F5C518; /* IMDb yellow color */
+  color: #000; /* Text color for contrast */
+}
+/* Floating Navigation Bar */
+.navbar {
+  position: fixed; /* Makes the navbar float */
+  bottom: 0; /* Position it at the bottom */
+  left: 50%; /* Center the navbar horizontally */
+  transform: translateX(-50%); /* Offset by 50% to truly center it */
+  width: auto; /* Auto width so that it adapts to the content */
+  background-color: #222;
+  padding: 10px 0;
+  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.5); /* Floating effect */
+  z-index: 1000; /* Ensure it stays on top of all content */
+  display: flex;
+  justify-content: center;
+  gap: 20px; /* Spacing between buttons */
+}
+
+.nav-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  width: 100%; /* Full width to align items inside */
+  max-width: 1200px; /* Limit width for large screens */
+  padding: 0 20px;
+}
+
+.nav-container button {
+  background-color: #444;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-align: center;
+}
+
+.nav-container button:hover {
+  background-color: #555;
+}
+
+.nav-container button .nav-icon {
+  margin-right: 8px; /* Space between icon and text */
+  width: 18px; /* Icon size */
+  height: 18px; /* Icon size */
+}
+
+/* For mobile devices */
+@media (max-width: 768px) {
+  .header {
+    height: 250px;
+  }
+
+  .main-image {
+    width: 100%;
+  }
+
+  .small-images {
+    display: block;
+    position: relative;
+    top: 20px;
+    transform: translateY(0);
+    width: 100%;
+    justify-content: center;
+  }
+
+  .small-image {
+    width: 50%;
+    margin-bottom: 10px;
+    opacity: 1;
+  }
+
+  .movie-card img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+/* For tablets and medium screens */
+@media (max-width: 1024px) {
+  .header {
+    height: 280px;
+  }
+
+  .small-images {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+  }
+
+  .small-image {
+    width: 25%;
+  }
+
+  .movie-card img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+/* For larger screens (desktops and bigger tablets) */
+@media (min-width: 1025px) {
+  .header {
+    height: 400px;
+  }
+
+  .main-image {
+    width: 80%;
+  }
+
+  .small-images {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .small-image {
+    width: 20%;
+  }
+
+  .movie-card img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+/* Navbar.css */
+
+/* Reset margin, padding, and box-sizing for all elements */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+}
+
+/* Navbar styling */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2vw 3vw; /* Dynamic padding based on viewport width */
+  background-color: #333;
+  color: white;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: padding 0.3s ease, font-size 0.3s ease;
+}
+
+/* Logo styling */
+.navbar .logo {
+  font-size: 2vw; /* Dynamic font size based on viewport width */
+  font-weight: bold;
+  transition: font-size 0.3s ease;
+}
+
+/* Navigation links styling */
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 2vw; /* Dynamic gap based on viewport width */
+}
+
+.nav-links li {
+  margin: 0;
+}
+
+/* Link styling */
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  padding: 0.5em 1em; /* Using 'em' to make it scale with font size */
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+/* Hover effect for links */
+.nav-links a:hover {
+  background-color: #575757;
+}
+
+/* Mobile styles */
+.menu-icon {
+  display: none;
+  cursor: pointer;
+}
+
+.menu-icon .bar {
+  width: 30px;
+  height: 4px;
+  margin: 6px 0;
+  background-color: white;
+}
+
+/* Mobile responsive design */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+
+  /* Adjust navbar for smaller screens */
+  .navbar {
+    padding: 4vw 5vw; /* Adjust padding on smaller screens */
+  }
+
+  .navbar .logo {
+    font-size: 5vw; /* Adjust logo size on smaller screens */
+  }
+
+  .nav-links a {
+    padding: 0.7em 1.2em; /* Adjust link padding for smaller screens */
+  }
+}
+
+/* Very small screens */
+@media (max-width: 480px) {
+  .navbar {
+    padding: 5vw 6vw; /* Further adjust padding for very small screens */
+  }
+
+  .navbar .logo {
+    font-size: 6vw; /* Further adjust logo size for small screens */
+  }
+
+  .nav-links a {
+    padding: 0.8em 1.5em; /* Further adjust link padding for small screens */
+  }
+}

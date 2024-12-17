@@ -19,8 +19,28 @@ import Save from './save';
 import Featured from './featured';
 import Menu from './menu';
 
+// import of movies
+import Amaran from './amaran';  // Ensure Amaran is a React component
+import Moana from './moana';
+import Dune from './dune';
+import Gladiator from './gladiator';
+import Gladiator1 from './Gladiator1';
+import Luckybaskhar from './luckybaskhar';
+import Wicked from './wicked';
+import IronMan from './IronMan';
+import OurLittleSecret from './OurLittleSecret';
+import Pushpa from './Pushpa';
+import Conclave from './Conclave';
+import SnowWhite from './SnowWhite';
+import DeadpoolWolverine from './DeadpoolWolverine';
+import Smile2 from './Smile2';
+import TheMerryGentlemen from './TheMerryGentlemen';
+import Thor from './Thor';
+import AvengersEndgame from './AvengersEndgame';
+import SquidGame from './SquidGame';
 
 const App = () => {
+  const [currentPage, setCurrentPage] = useState(null); // Track the current page for rendering
 
   // const MongoClient = new MongoClient('mongodb+srv://tech:tech2410@movierecommendation.nwujz.mongodb.net/collection?retryWrites=true&w=majority&appName=MovieRecommendation');
   const [currentName, setCurrentName] = useState(null);
@@ -32,7 +52,7 @@ const App = () => {
 
   //movie name
   // Assuming you have the Firebase Firestore and other necessary imports above
-  const [name, setName] = useState("Amaran");  // Correctly initialize the state
+  const [name, setName] = useState("wicked");  // Correctly initialize the state
   const [email, setEmail] = useState(user.email);  // Set email based on current user
 
   
@@ -86,7 +106,7 @@ const App = () => {
   try {
     // set name 
     // Reset name and email to their initial values
-    setName("Amaran");
+    setName("wicked");
     setEmail(user.email);
     // Add data to Firestore
     const docRef = await addDoc(ref, data);
@@ -162,6 +182,125 @@ const App = () => {
   if (currentName === 'search') {
     return <Search />;
   }
+  // pages
+  
+
+  const navigateToMovie = (page) => {
+    switch (page) {
+      case 'amaran':
+        setCurrentPage('amaran'); // Set the page to Amaran
+        break;
+      case 'moana':
+        setCurrentPage('moana'); // Set the page to Avatar
+        break;
+      case 'dune':
+        setCurrentPage('dune'); // Set the page to Inception
+        break;
+      case 'Gladiator':
+        setCurrentPage('Gladiator'); // Set the page to Inception
+        break;
+      case 'Gladiator1':
+        setCurrentPage('Gladiator1'); // Set the page to Inception
+        break;
+      case 'Luckybaskhar':
+        setCurrentPage('Luckybaskhar'); // Set the page to Inception
+        break;
+      case 'Wicked':
+        setCurrentPage('Wicked'); // Set the page to Inception
+        break;
+      case 'IronMan':
+        setCurrentPage('IronMan'); // Set the page to Inception
+        break;
+      case 'OurLittleSecret':
+        setCurrentPage('OurLittleSecret'); // Set the page to Inception
+        break;
+      case 'Pushpa':
+        setCurrentPage('Pushpa'); // Set the page to Inception
+        break;
+      case 'Conclave':
+        setCurrentPage('Conclave'); // Set the page to Inception
+        break;
+      case 'SnowWhite':
+        setCurrentPage('SnowWhite'); // Set the page to Inception
+        break;
+      case 'DeadpoolWolverine':
+        setCurrentPage('DeadpoolWolverine'); // Set the page to Inception
+        break;
+      case 'Smile2':
+        setCurrentPage('Smile2'); // Set the page to Inception
+        break;
+      case 'TheMerryGentlemen':
+        setCurrentPage('TheMerryGentlemen'); // Set the page to Inception
+        break;
+      case 'Thor':
+        setCurrentPage('Thor'); // Set the page to Inception
+        break;
+      case 'AvengersEndgame':
+        setCurrentPage('AvengersEndgame'); // Set the page to Inception
+        break;
+      case 'SquidGame':
+        setCurrentPage('SquidGame'); // Set the page to Inception
+        break;
+      default:
+        window.location.href = page; // Navigate to other URLs
+        break;
+    }
+  };
+
+  if (currentPage === 'amaran') {
+    return <Amaran />; // Render the Amaran component
+  }
+  if (currentPage === 'moana') {
+    return <Moana />; // Render the Avatar component
+  }
+  if (currentPage === 'dune') {
+    return <Dune />; // Render the Inception component
+  }
+  if (currentPage === 'Gladiator') {
+    return <Gladiator />; // Render the Inception component
+  }
+  if (currentPage === 'Gladiator1') {
+    return <Gladiator1 />; // Render the Inception component
+  }
+  if (currentPage === 'Luckybaskhar') {
+    return <Luckybaskhar />; // Render the Inception component
+  }
+  if (currentPage === 'Wicked') {
+    return <Wicked />; // Render the Inception component
+  }
+  if (currentPage === 'IronMan') {
+    return <IronMan />; // Render the Inception component
+  }
+  if (currentPage === 'OurLittleSecret') {
+    return <OurLittleSecret />; // Render the Inception component
+  }
+  if (currentPage === 'Pushpa') {
+    return <Pushpa />; // Render the Inception component
+  }
+  if (currentPage === 'Conclave') {
+    return <Conclave />; // Render the Inception component
+  }
+  if (currentPage === 'SnowWhite') {
+    return <SnowWhite />; // Render the Inception component
+  }
+  if (currentPage === 'DeadpoolWolverine') {
+    return <DeadpoolWolverine />; // Render the Inception component
+  }
+  if (currentPage === 'Smile2') {
+    return <Smile2 />; // Render the Inception component
+  }
+  if (currentPage === 'TheMerryGentlemen') {
+    return <TheMerryGentlemen />; // Render the Inception component
+  }
+  if (currentPage === 'Thor') {
+    return <Thor />; // Render the Inception component
+  }
+  if (currentPage === 'AvengersEndgame') {
+    return <AvengersEndgame />; // Render the Inception component
+  }
+  if (currentPage === 'SquidGame') {
+    return <SquidGame />; // Render the Inception component
+  }
 
   return (
     <div className="app-container">
@@ -187,31 +326,22 @@ const App = () => {
       <div className="movie-container">
         <div className="movie-header">
           <img
-            src="https://i.ibb.co/hWpJNYX/amaran.jpg" // Replace with actual movie poster
-            alt="Amaran Poster"
+            src="https://i.ibb.co/1K8yCg7/wicked.jpg" // Replace with actual movie poster
+            alt="wicked Poster"
             className="movie-poster"
           />
           <div className="movie-details">
-            <h1>Amaran <span className="year">2024 • 2h 47m</span></h1>
+            <h1>wicked <span className="year">wicked (2021)</span></h1>
             <p className="movie-description">
-            Plot: The film is a biopic about the life of Major Mukund Varadarajran, an AC awardee who was martyred in 2014. It follows his personal and professional life, and includes themes of valor, glory, and purpose.<br></br> 
-            Cast: Stars Sivakarthikeyan as Major Mukund Varadarajan, Sai Pallavi as his fiancée, Rahul Bose, and Bhuvan Arora.<br></br> 
-            Director: Rajkumar Periasamy, who also wrote the screenplay. <br></br>
-            Production: Produced by Raaj Kamal Films International and Sony Pictures Films India. <br></br>
-            Release date: October 31, 2024. <br></br>
-            Running time: 169 minutes. <br></br>
-            Language: Tamil. <br></br>
-            Budget: ₹70–200 crore. <br></br>
-            Parents guide: Infrequent verbal references to a man having multiple girlfriends, but no sex or nudity is shown. <br></br>
-            Amaran is based on the book series India's Most Fearless: True Stories of Modern Military Heroes by Shiv Aroor and Rahul Singh. <br></br>
+            Elphaba, a misunderstood young woman because of her green skin, and Glinda, a popular girl, become friends at Shiz University in the Land of Oz. After an encounter with the Wonderful Wizard of Oz, their friendship reaches a crossroads.<br></br>
             </p>
             <br></br>
             <div className="tags">
-              <span>Action Epic</span>
-              <span>Drama</span>
-              <span>Biography</span>
-	            <span>Tragedy</span>
-		          <span>War</span>
+              <span>Fairy Tale</span>
+              <span>Pop Musical</span>
+              <span>Fantasy</span>
+              <span>Musical</span>
+              <span>Romance</span>
             </div>
             <div className="rating-section">
               <div>
@@ -228,10 +358,10 @@ const App = () => {
 
         {/* Video Section */}
         <div className="video-section">
-          <h2>Amaran | Official Trailer</h2>
+          <h2>wicked | Official Trailer</h2>
           <iframe
-            src="https://www.youtube.com/embed/H7FT-d4YA74" // Replace with actual YouTube trailer
-            title="Amaran Trailer"
+            src="https://www.youtube.com/embed/6COmYeLsz4c?loop=1&autoplay=1&fs=0&controls=0&modestbranding=1" // Replace with actual YouTube trailer
+            title="wicked Trailer"
             className="trailer-video"
           />
         </div>

@@ -1,0 +1,46 @@
+/* recommendation.css */
+
+/* Wrapper class to scope styles */
+.recommendation-container {
+  text-align: center;
+  padding: 20px;
+}
+
+.recommendation-container h1 {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.recommendation-container .movie-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.recommendation-container .movie-card {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  width: 200px;
+  text-align: center;
+}
+
+.recommendation-container .movie-poster {
+  width: 100%;
+  height: auto;
+  border-bottom: 2px solid #f0f0f0;
+}
+
+.recommendation-container .movie-title {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+  margin: 10px 0 5px;
+}
+
+.recommendation-container .movie-year {
+  color: #777;
+  font-size: 14px;
+}

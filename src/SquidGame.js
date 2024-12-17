@@ -18,9 +18,29 @@ import Search from './search';
 import Save from './save';
 import Featured from './featured';
 import Menu from './menu';
+// import of movies
+import Amaran from './amaran';  // Ensure Amaran is a React component
+import Moana from './moana';
+import Dune from './dune';
+import Gladiator from './gladiator';
+import Gladiator1 from './Gladiator1';
+import Luckybaskhar from './luckybaskhar';
+import Wicked from './wicked';
+import IronMan from './IronMan';
+import OurLittleSecret from './OurLittleSecret';
+import Pushpa from './Pushpa';
+import Conclave from './Conclave';
+import SnowWhite from './SnowWhite';
+import DeadpoolWolverine from './DeadpoolWolverine';
+import Smile2 from './Smile2';
+import TheMerryGentlemen from './TheMerryGentlemen';
+import Thor from './Thor';
+import AvengersEndgame from './AvengersEndgame';
+import SquidGame from './SquidGame';
 
 
 const App = () => {
+  const [currentPage, setCurrentPage] = useState(null); // Track the current page for rendering
 
   // const MongoClient = new MongoClient('mongodb+srv://tech:tech2410@movierecommendation.nwujz.mongodb.net/collection?retryWrites=true&w=majority&appName=MovieRecommendation');
   const [currentName, setCurrentName] = useState(null);
@@ -32,7 +52,7 @@ const App = () => {
 
   //movie name
   // Assuming you have the Firebase Firestore and other necessary imports above
-  const [name, setName] = useState("Amaran");  // Correctly initialize the state
+  const [name, setName] = useState("SquidGame");  // Correctly initialize the state
   const [email, setEmail] = useState(user.email);  // Set email based on current user
 
   
@@ -86,7 +106,7 @@ const App = () => {
   try {
     // set name 
     // Reset name and email to their initial values
-    setName("Amaran");
+    setName("SquidGame");
     setEmail(user.email);
     // Add data to Firestore
     const docRef = await addDoc(ref, data);
@@ -162,6 +182,125 @@ const App = () => {
   if (currentName === 'search') {
     return <Search />;
   }
+  // pages
+  
+
+  const navigateToMovie = (page) => {
+    switch (page) {
+      case 'amaran':
+        setCurrentPage('amaran'); // Set the page to Amaran
+        break;
+      case 'moana':
+        setCurrentPage('moana'); // Set the page to Avatar
+        break;
+      case 'dune':
+        setCurrentPage('dune'); // Set the page to Inception
+        break;
+      case 'Gladiator':
+        setCurrentPage('Gladiator'); // Set the page to Inception
+        break;
+      case 'Gladiator1':
+        setCurrentPage('Gladiator1'); // Set the page to Inception
+        break;
+      case 'Luckybaskhar':
+        setCurrentPage('Luckybaskhar'); // Set the page to Inception
+        break;
+      case 'Wicked':
+        setCurrentPage('Wicked'); // Set the page to Inception
+        break;
+      case 'IronMan':
+        setCurrentPage('IronMan'); // Set the page to Inception
+        break;
+      case 'OurLittleSecret':
+        setCurrentPage('OurLittleSecret'); // Set the page to Inception
+        break;
+      case 'Pushpa':
+        setCurrentPage('Pushpa'); // Set the page to Inception
+        break;
+      case 'Conclave':
+        setCurrentPage('Conclave'); // Set the page to Inception
+        break;
+      case 'SnowWhite':
+        setCurrentPage('SnowWhite'); // Set the page to Inception
+        break;
+      case 'DeadpoolWolverine':
+        setCurrentPage('DeadpoolWolverine'); // Set the page to Inception
+        break;
+      case 'Smile2':
+        setCurrentPage('Smile2'); // Set the page to Inception
+        break;
+      case 'TheMerryGentlemen':
+        setCurrentPage('TheMerryGentlemen'); // Set the page to Inception
+        break;
+      case 'Thor':
+        setCurrentPage('Thor'); // Set the page to Inception
+        break;
+      case 'AvengersEndgame':
+        setCurrentPage('AvengersEndgame'); // Set the page to Inception
+        break;
+      case 'SquidGame':
+        setCurrentPage('SquidGame'); // Set the page to Inception
+        break;
+      default:
+        window.location.href = page; // Navigate to other URLs
+        break;
+    }
+  };
+
+  if (currentPage === 'amaran') {
+    return <Amaran />; // Render the Amaran component
+  }
+  if (currentPage === 'moana') {
+    return <Moana />; // Render the Avatar component
+  }
+  if (currentPage === 'dune') {
+    return <Dune />; // Render the Inception component
+  }
+  if (currentPage === 'Gladiator') {
+    return <Gladiator />; // Render the Inception component
+  }
+  if (currentPage === 'Gladiator1') {
+    return <Gladiator1 />; // Render the Inception component
+  }
+  if (currentPage === 'Luckybaskhar') {
+    return <Luckybaskhar />; // Render the Inception component
+  }
+  if (currentPage === 'Wicked') {
+    return <Wicked />; // Render the Inception component
+  }
+  if (currentPage === 'IronMan') {
+    return <IronMan />; // Render the Inception component
+  }
+  if (currentPage === 'OurLittleSecret') {
+    return <OurLittleSecret />; // Render the Inception component
+  }
+  if (currentPage === 'Pushpa') {
+    return <Pushpa />; // Render the Inception component
+  }
+  if (currentPage === 'Conclave') {
+    return <Conclave />; // Render the Inception component
+  }
+  if (currentPage === 'SnowWhite') {
+    return <SnowWhite />; // Render the Inception component
+  }
+  if (currentPage === 'DeadpoolWolverine') {
+    return <DeadpoolWolverine />; // Render the Inception component
+  }
+  if (currentPage === 'Smile2') {
+    return <Smile2 />; // Render the Inception component
+  }
+  if (currentPage === 'TheMerryGentlemen') {
+    return <TheMerryGentlemen />; // Render the Inception component
+  }
+  if (currentPage === 'Thor') {
+    return <Thor />; // Render the Inception component
+  }
+  if (currentPage === 'AvengersEndgame') {
+    return <AvengersEndgame />; // Render the Inception component
+  }
+  if (currentPage === 'SquidGame') {
+    return <SquidGame />; // Render the Inception component
+  }
 
   return (
     <div className="app-container">
@@ -187,31 +326,29 @@ const App = () => {
       <div className="movie-container">
         <div className="movie-header">
           <img
-            src="https://i.ibb.co/hWpJNYX/amaran.jpg" // Replace with actual movie poster
-            alt="Amaran Poster"
+            src="https://i.ibb.co/nkSYfQg/Squid-Game.jpg" // Replace with actual movie poster
+            alt="SquidGame Poster"
             className="movie-poster"
           />
           <div className="movie-details">
-            <h1>Amaran <span className="year">2024 • 2h 47m</span></h1>
+            <h1>SquidGame <span className="year">SquidGame (2021-2025)</span></h1>
             <p className="movie-description">
-            Plot: The film is a biopic about the life of Major Mukund Varadarajran, an AC awardee who was martyred in 2014. It follows his personal and professional life, and includes themes of valor, glory, and purpose.<br></br> 
-            Cast: Stars Sivakarthikeyan as Major Mukund Varadarajan, Sai Pallavi as his fiancée, Rahul Bose, and Bhuvan Arora.<br></br> 
-            Director: Rajkumar Periasamy, who also wrote the screenplay. <br></br>
-            Production: Produced by Raaj Kamal Films International and Sony Pictures Films India. <br></br>
-            Release date: October 31, 2024. <br></br>
-            Running time: 169 minutes. <br></br>
-            Language: Tamil. <br></br>
-            Budget: ₹70–200 crore. <br></br>
-            Parents guide: Infrequent verbal references to a man having multiple girlfriends, but no sex or nudity is shown. <br></br>
-            Amaran is based on the book series India's Most Fearless: True Stories of Modern Military Heroes by Shiv Aroor and Rahul Singh. <br></br>
+            Hundreds of cash-strapped players accept a strange invitation to compete in children's games. Inside, a tempting prize awaits with deadly high stakes: a survival game that has a whopping 45.6 billion-won prize at stake.<br></br>
+            A story of people who fail at life for various reasons, but suddenly receive a mysterious invitation to participate in a survival game to win more than 38 million US dollars. The game takes place on an isolated island and the participants are locked up until there is a final winner. The story incorporates popular Korean children's games from the 1970s and 1980s, such as squid game, the literal translation of its Korean name, which is a type of tag where offense and defense use a squid-shaped board drawn in the dirt.<br></br>
+            456 players are abducted from the streets of South Korea and crowded together on an island where only one survivor will win the ultimate prize: their lives and the money to pay their crippling debts. Playing deadly versions of kids' games, these players are fighting for themselves and will do whatever it takes to see everything through to the end--or die trying.<br></br>
+            —Johnny-the-Film-Sentinel-2187<br></br>
+            Seong Gi-hun is a gambling addict and owes a large amount to an unscrupulous loan shark. His addiction has wrecked his marriage and means he rarely sees his daughter. When a stranger offers him an opportunity to play a game that will potentially see his debts erased, he jumps at the opportunity. Little does he realise how deadly the game is. <br></br>
+            —grantss<br></br>
             </p>
             <br></br>
             <div className="tags">
-              <span>Action Epic</span>
-              <span>Drama</span>
-              <span>Biography</span>
-	            <span>Tragedy</span>
-		          <span>War</span>
+              <span>Comspiracy Thriller</span>
+              <span>Korean Drama</span>
+              <span>Psychological Drama</span>
+              <span>Action</span>
+              <span>Super Mystery</span>
+              <span>Mystery</span>
+              <span>Thriller</span>
             </div>
             <div className="rating-section">
               <div>
@@ -228,10 +365,10 @@ const App = () => {
 
         {/* Video Section */}
         <div className="video-section">
-          <h2>Amaran | Official Trailer</h2>
+          <h2>SquidGame | Official Trailer</h2>
           <iframe
-            src="https://www.youtube.com/embed/H7FT-d4YA74" // Replace with actual YouTube trailer
-            title="Amaran Trailer"
+            src="https://www.youtube.com/embed/Ed1sGgHUo88?loop=1&autoplay=1&fs=0&controls=0&modestbranding=1" // Replace with actual YouTube trailer
+            title="SquidGame Trailer"
             className="trailer-video"
           />
         </div>

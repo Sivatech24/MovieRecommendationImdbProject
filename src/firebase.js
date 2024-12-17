@@ -2,6 +2,8 @@
 import { initializeApp } from "firebase/app";
 import { getAuth } from "firebase/auth";
 import { getDatabase, ref, set, get } from "firebase/database";
+// import {getFirestore} from "@firebase/firestore";
+import { getFirestore } from 'firebase/firestore'; // Import Firestore
 // import { auth } from "./firebaseConfig";
 
 // Your Firebase configuration
@@ -20,3 +22,9 @@ const app = initializeApp(firebaseConfig);
 export const auth = getAuth(app);
 export const database = getDatabase(app);
 export const dbRef = (path) => ref(database, path);
+const firestore = getFirestore(app);
+// Initialize Firebase services
+// const auth = getAuth(app);  // Firebase Authentication
+const db = getFirestore(app);  // Firestore initialization
+// Export the services you need
+export { db };  // Export db so you can use it in your components

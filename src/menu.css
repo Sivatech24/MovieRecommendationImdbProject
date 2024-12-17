@@ -1,0 +1,114 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #1a1a1a;
+    color: #fff;
+  }
+  
+  /* Header */
+  .imdb-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #333;
+    border-bottom: 2px solid #f5c518;
+  }
+  
+  /* Logo */
+  .imdb-logo h1 {
+    margin: 0;
+    color: #f5c518;
+    font-size: 24px;
+  }
+  
+  /* Navigation */
+  .imdb-nav {
+    display: flex;
+    align-items: center;
+  }
+  
+  .nav-list {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .nav-item {
+    margin: 0 15px;
+    cursor: pointer;
+    position: relative;
+    font-size: 16px;
+    color: #fff;
+    text-transform: uppercase;
+  }
+  
+  .nav-item:hover {
+    color: #f5c518;
+  }
+  
+  /* Dropdown Menu */
+  .dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #444;
+    padding: 10px 0;
+    list-style: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+  }
+  
+  .dropdown-item {
+    padding: 10px 20px;
+    color: #fff;
+    text-transform: capitalize;
+    white-space: nowrap;
+  }
+  
+  .dropdown-item:hover {
+    background-color: #555;
+    color: #f5c518;
+  }
+  
+  /* Carousel */
+  .carousel-container {
+    width: 90%;
+    margin: 20px auto;
+  }
+  
+  .carousel-slide {
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+  
+  .carousel-slide:hover {
+    transform: scale(1.05);
+  }
+  
+  .carousel-image {
+    width: 100%;
+    border-radius: 10px;
+  }
+  
+  .carousel-caption {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #fff;
+  }
+  
+  .slick-prev, .slick-next {
+    z-index: 10;
+  }
+  
+  .slick-dots li button:before {
+    color: #fff;
+  }
+  
+  .slick-prev:before, .slick-next:before {
+    color: #fff;
+  }
+  

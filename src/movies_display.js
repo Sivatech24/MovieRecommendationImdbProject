@@ -3,17 +3,24 @@ import './movie_display.css';
 
 const App = () => {
   const [showModal, setShowModal] = useState(false);
-  const [userRating, setUserRating] = useState(9); // Default rating by the user
+  const [userRating, setUserRating] = useState(9);
+  const [username, setUsername] = useState('exampleUser'); // Replace with Firebase email username extraction logic
+  const movieName = 'Amaran';
 
-  // Function to handle modal open/close
   const toggleModal = () => {
     setShowModal(!showModal);
   };
 
-  // Function to handle user rating
-  const handleRating = (rating) => {
+  const handleRating = async (rating) => {
     setUserRating(rating);
     toggleModal();
+
+    try {
+      const message = await saveRating(movieName, rating, username);
+      alert(message);
+    } catch (error) {
+      alert('Failed to save rating. Please try again.');
+    }
   };
 
   return (
