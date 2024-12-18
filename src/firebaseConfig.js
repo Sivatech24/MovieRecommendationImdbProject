@@ -3,7 +3,7 @@ import { getDatabase, ref } from "firebase/database";
 import { getFirestore } from "firebase/firestore";
 
 const firebaseConfig = {
-    apiKey: "AIzaSyCHtQr76Qdtbuc0BiAfE6203kHWV77WDmU",
+    apiKey: "API_KEY",
     authDomain: "movie-recommendation-9881e.firebaseapp.com",
     databaseURL: "https://movie-recommendation-9881e-default-rtdb.firebaseio.com",
     projectId: "movie-recommendation-9881e",
