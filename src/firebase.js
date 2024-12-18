@@ -7,6 +7,9 @@ import { getFirestore } from 'firebase/firestore'; // Import Firestore
 // import { auth } from "./firebaseConfig";
 // dotenv
 // require('dotenv').config()
+// require('dotenv').config();
+
+// const apiKey = process.env.API_KEY;
 
 // Your Firebase configuration
 const firebaseConfig = {
