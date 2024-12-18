@@ -5,6 +5,8 @@ import { getDatabase, ref, set, get } from "firebase/database";
 // import {getFirestore} from "@firebase/firestore";
 import { getFirestore } from 'firebase/firestore'; // Import Firestore
 // import { auth } from "./firebaseConfig";
+// dotenv
+// require('dotenv').config()
 
 // Your Firebase configuration
 const firebaseConfig = {
